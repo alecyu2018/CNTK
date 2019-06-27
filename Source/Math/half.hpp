@@ -14,6 +14,7 @@
 
 #pragma warning(disable : 4505) // 'function' : unreferenced local function has been removed
 
+#define CUDA_NO_HALF
 #include <cuda_fp16.h> // ASSUME CUDA10
 #else
 class alignas(2) __half
